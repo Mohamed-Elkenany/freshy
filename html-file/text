@@ -1,0 +1,16 @@
+ <tr>
+                        <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                        <td><img src="/freshImage/hearty.jpg" alt=""></td>
+                        <td>Hearty Breakfast Sandwich on a Bagel</td>
+                        <td>$3.5</td>
+                        <td><input type="number" value="1"></td>
+                        <td>$3.5</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                        <td><img src="/freshImage/sourthern.jpg" alt=""></td>
+                        <td>Southern Country Fried Chicken Sandwich</td>
+                        <td>$3.5</td>
+                        <td><input type="number" value="1"></td>
+                        <td>$3.5</td>
+                    </tr>
