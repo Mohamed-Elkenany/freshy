@@ -1,60 +1,52 @@
-let menu = document.querySelector(".body .header .contact .menu-bar");
-let nav = document.querySelector(".body .header .navbar");
-let removeNav = document.querySelector(".body .header .navbar .move");
-let btn = document.querySelectorAll("#master tbody tr");
-let totalItims = document.querySelector("#subtable table .total-items");
-let amount = document.querySelectorAll("table tr .amount");
-let totalCost = document.querySelector("#subtable table .total-cost");
-let countItems = document.querySelector(".body .count-items");
+const navbar = document.querySelector(".header .navbar");
+const menu = document.querySelector(".header .menu-bar");
 let decreament = document.querySelectorAll("table td .decreament");
 let increament = document.querySelectorAll("table td .increament");
-let orderDone = document.querySelector("#subtotal .container #btn");
+let totalItems = document.querySelector("#subtotal .total-items");
+let totalCost = document.querySelector("#subtotal .total-cost");
+let orderNow=document.querySelector("#subtotal #btn")
 let overDone = document.querySelector(".over-done");
-btn.forEach(btn => {
-    btn.onmouseenter = function () {
-        btn.classList.add("active");
-        let decreament = document.querySelector("table .active .decreament");
-        let increament = document.querySelector("table .active .increament");
-        let amount = document.querySelector("table .active .amount");
-        let subtotal = document.querySelector("table tbody .active .subtotal");
-        let price = document.querySelector("table tbody .active .price");
-        decreament.onclick = function () {
-            if (amount.value <= 0) {
-                amount.value = 0;
-                subtotal.innerHTML = "0";
-                decreament.disabled = false;
-            } else {
-                countItems.style.display = "block";
+let countItems = document.querySelector(".header .count-items");
+    decreament.forEach(element=> {
+        element.addEventListener("click", (e)=> {
+            let amount = e.target.parentElement.querySelector(".amount");
+            let subTotal = e.target.parentElement.parentElement.parentElement.querySelector("td .subtotal");
+            let price = e.target.parentElement.parentElement.parentElement.querySelector("td .price");
+            if (amount.value !== "0") {
                 amount.value = parseInt(amount.value) - 1;
-                subtotal.innerHTML -= price.innerHTML;
-                totalItims.innerHTML -= 1;
-                totalCost.innerHTML -= price.innerHTML;
+                subTotal.innerHTML = `${parseFloat(subTotal.innerHTML) - parseFloat(price.innerHTML)}`;
+                totalCost.innerHTML = `${parseFloat(totalCost.innerHTML) - parseFloat(price.innerHTML)}`;
+                totalItems.innerHTML -= 1;
+                countItems.style.display = "block";
+                countItems.innerHTML -= 1;
+            } else {
+                countItems.style.display = "none";
             }
-
-        }
-        increament.onclick = function () {
-            decreament.style.zIndex="1000";
-            amount.value = parseInt(amount.value) + 1;
-            subtotal.innerHTML = `${parseFloat(subtotal.innerHTML) + parseFloat(price.innerHTML)}`;
-            totalCost.innerHTML = `${parseFloat(totalCost.innerHTML) + parseFloat(price.innerHTML)}`;
-            totalItims.innerHTML = `${parseInt(totalItims.innerHTML) + 1}`;
-        }
-    }
-    btn.onmouseleave = function () {
-        btn.classList.remove("active")
-    }
+            });
+    });
+increament.forEach(element => {
+    element.addEventListener("click", (e) => {
+        let amount = e.target.parentElement.querySelector(".amount");
+        amount.value = parseInt(amount.value) + 1;
+        let subTotal = e.target.parentElement.parentElement.parentElement.querySelector("td .subtotal");
+        let price = e.target.parentElement.parentElement.parentElement.querySelector("td .price");
+        subTotal.innerHTML = `${parseFloat(price.innerHTML) + parseFloat(subTotal.innerHTML)}`;
+        totalCost.innerHTML = `${parseFloat(price.innerHTML) + parseFloat(totalCost.innerHTML)}`;
+        totalItems.innerHTML = `${parseInt(totalItems.innerHTML) + 1}`
+                countItems.style.display = "block";
+        countItems.innerHTML=`${parseInt(countItems.innerHTML) + 1}`
+    });
 });
-let navBar = document.querySelector(".header .navbar");
-let menuBar = document.querySelector(".header .menu-bar");
-let move = document.querySelector(".header .move");
-menuBar.onclick = function () {
-    navBar.classList.toggle("active");
-};
-orderDone.addEventListener("click", () => {
+
+menu.onclick = function () {
+    navbar.classList.toggle("active");
+}
+orderNow.onclick = function () {
     if (totalCost.innerHTML !== "0") {
         overDone.classList.add("active");
         setTimeout(function () {
             location.reload(true);
         }, 800);
-    }
-});
+    };
+};
+
