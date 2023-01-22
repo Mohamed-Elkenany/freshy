@@ -67,7 +67,7 @@ signIn.onclick = function () {
 let removeOvarlay = document.querySelectorAll(".remove-overlay");
 removeOvarlay.forEach(element => {
     element.addEventListener("click", () => {
-        layout.style.top = '-1000px';
+        layout.style.top = '-2000px';
     });
 });
 let navBar = document.querySelector(".header .navbar");
