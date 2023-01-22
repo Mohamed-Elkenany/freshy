@@ -1,3 +1,7 @@
+/*
+New Update
+*/
+
 let menuContent = document.querySelector(".menu-content");
 let dirMove = document.querySelectorAll(".direction i");
 let firstBox = menuContent.querySelectorAll(".menu-box")[0];
