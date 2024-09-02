@@ -1,149 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="fesh.style/all.min.css">
-    <link rel="stylesheet" href="fesh.style/normalize.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="fesh.style/freshy.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="fesh.style/all.min.css" />
+    <link rel="stylesheet" href="fesh.style/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="fesh.style/freshy.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <title>Healthy and Testy</title>
-</head>
-<body>
-    <h1 class="shadow">Freshy</h1>
-    <div class="overlay ">
-        <div class="login-form">
-            <div class="content-form">
-                <h2>Sign-In</h2>
-            <form action="#" method="post">
-                <div class="remove-overlay">X</div>
-                <div class="input-field ">
-                    <input type="email" placeholder="Email" name="email" required>
-                </div>
-                <div class="input-field password">
-                    <input class="pw" type="password" placeholder="Password" name="username"  required>
-                    <i class="fa-regular fa-eye-slash eye-icon"></i>
-                </div>
-                <div class="form-link">
-                    <a href="#" class="forget-pass">Forget Password?</a>
-                </div>
-                <div class="btn-field">
-                    <button>Sign-in</button>
-                </div>
-                <div class="signup-field">
-                    <span class="signup">Don't have an account? <a class="sign-up" href="#">Signup</a></span>
-                </div>
-            </form>
-            <div class="line"></div>
-            <div class="media-option">
-                <a href="#" class="facebook">
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <span>Sign-in With Facebook</span>
-                </a>
-                <a href="#" class="google">
-                    <i class="fa-brands fa-google"></i>
-                    <span>Sign-in With Google</span>
-                </a>
+  </head>
+  <body>
+    <!-- <h1 class="shadow">Freshy</h1>
+    <div class="overlay">
+      <div class="login-form">
+        <div class="content-form">
+          <h2>Sign-In</h2>
+          <form action="#" method="post">
+            <div class="remove-overlay">X</div>
+            <div class="input-field">
+              <input type="email" placeholder="Email" name="email" required />
             </div>
+            <div class="input-field password">
+              <input
+                class="pw"
+                type="password"
+                placeholder="Password"
+                name="username"
+                required
+              />
+              <i class="fa-regular fa-eye-slash eye-icon"></i>
             </div>
+            <div class="form-link">
+              <a href="#" class="forget-pass">Forget Password?</a>
             </div>
-        <div class="signup-form hidden">
-            <div class="content-form">
-                <h2>Signup</h2>
-            <form action="#" method="post">
-                <div class="remove-overlay">X</div>
-                <div class="input-field">
-                    <input type="email" placeholder="Email" name="email" required>
-                </div>
-                <div class="input-field pas">
-                    <input class="pw" type="password" placeholder="Password" name="username"  required>
-                </div>
-                <div class="input-field pass">
-                    <input class="pw"  type="password" placeholder="Confirm the password" name="username"  required>
-                    <i class="fa-regular fa-eye-slash eye-icon"></i>
-                </div>
-                <div class="form-link">
-                    <input type="checkbox" id="check">
-                    <label for="check">You are agree</label>
-                </div>
-                <div class="btn-field">
-                    <button>Singnup</button>
-                </div>
-                <div class="signup-field">
-                    <span class="signup">Already have an account ? <a class="log-in" href="#">Login</a></span>
-                </div>
-            </form>
-            <div class="line"></div>
-            <div class="media-option">
-                <a href="#" class="facebook">
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <span>Signup With Facebook</span>
-                </a>
-                <a href="#" class="google">
-                    <i class="fa-brands fa-google"></i>
-                    <span>Signup With Google</span>
-                </a>
+            <div class="btn-field">
+              <button>Sign-in</button>
             </div>
+            <div class="signup-field">
+              <span class="signup"
+                >Don't have an account?
+                <a class="sign-up" href="#">Signup</a></span
+              >
             </div>
-            </div>
+          </form>
+          <div class="line"></div>
+          <div class="media-option">
+            <a href="#" class="facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+              <span>Sign-in With Facebook</span>
+            </a>
+            <a href="#" class="google">
+              <i class="fa-brands fa-google"></i>
+              <span>Sign-in With Google</span>
+            </a>
+          </div>
         </div>
+      </div>
+      <div class="signup-form hidden">
+        <div class="content-form">
+          <h2>Signup</h2>
+          <form action="#" method="post">
+            <div class="remove-overlay">X</div>
+            <div class="input-field">
+              <input type="email" placeholder="Email" name="email" required />
+            </div>
+            <div class="input-field pas">
+              <input
+                class="pw"
+                type="password"
+                placeholder="Password"
+                name="username"
+                required
+              />
+            </div>
+            <div class="input-field pass">
+              <input
+                class="pw"
+                type="password"
+                placeholder="Confirm the password"
+                name="username"
+                required
+              />
+              <i class="fa-regular fa-eye-slash eye-icon"></i>
+            </div>
+            <div class="form-link">
+              <input type="checkbox" id="check" />
+              <label for="check">You are agree</label>
+            </div>
+            <div class="btn-field">
+              <button>Singnup</button>
+            </div>
+            <div class="signup-field">
+              <span class="signup"
+                >Already have an account ?
+                <a class="log-in" href="#">Login</a></span
+              >
+            </div>
+          </form>
+          <div class="line"></div>
+          <div class="media-option">
+            <a href="#" class="facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+              <span>Signup With Facebook</span>
+            </a>
+            <a href="#" class="google">
+              <i class="fa-brands fa-google"></i>
+              <span>Signup With Google</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div> -->
     <!-- start header -->
     <div class="header">
-        <div class="container">
-            <div class="contact">
+      <div class="container">
+        <div class="content">
+          <a href="#">
             <div class="icon">
-            <div><a class="fa-solid fa-wheat-awn white" href="#"></a></div> 
-                <a href="#" class="name">Fre<span>shy</span></a>
+              <div>
+                <span class="fa-solid fa-wheat-awn white" href="#"></span>
+              </div>
+              <h2 href="#" class="name">Fre<span>shy</span></h2>
             </div>
-            <div class="navbar">
+          </a>
+          <div class="navbar">
             <ul class="nav">
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="http://127.0.0.1:5500/html-file/menu.html#home">Menu</a></li>
-                <li><a href="http://127.0.0.1:5500/html-file/contact-us.html">Contact Us</a></li>
-                <li><a href="#about-us">About Us</a></li>
+              <li><a href="#home" class="active">Home</a></li>
+              <li>
+                <a href="http://127.0.0.1:5500/html-file/menu.html#home"
+                  >Menu</a
+                >
+              </li>
+              <li>
+                <a href="http://127.0.0.1:5500/html-file/contact-us.html"
+                  >Contact Us</a
+                >
+              </li>
+              <li><a href="#about-us">About Us</a></li>
             </ul>
-            </div>
-            <div class="layout">
-                <i class="fa-solid fa-bag-shopping"></i>
-                <span class="menu-bar">
-                <span></span>
-                <span></span>
-                <span></span>
-            </span>
-                <span class="header-btn">Sign in</span>
-            </div>
+          </div>
+          <div class="layout">
+            <button class="shopping">
+              <i class="fa-solid fa-bag-shopping"></i>
+            </button>
+            <button class="IconMenu">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+            <span class="header-btn">SignIn</span>
+          </div>
         </div>
-        </div>
+      </div>
+      <div class="menuList">
+        <ul class="nav">
+          <li><a href="#home" class="active">Home</a></li>
+          <li>
+            <a href="http://127.0.0.1:5500/html-file/menu.html#home">Menu</a>
+          </li>
+          <li>
+            <a href="http://127.0.0.1:5500/html-file/contact-us.html"
+              >Contact Us</a
+            >
+          </li>
+          <li><a href="#about-us">About Us</a></li>
+        </ul>
+      </div>
     </div>
     <!-- end header -->
     <!-- start home -->
     <div class="home">
-        <div class="container">
-            <div class="content">
-                <div class="text-content">
-                    <div>You don’t have to eat less,<span><br> you just have to eat right.</span></div>
-                    <p>Eating less is not going to make you healthy. It sure can make you skinny fat, which is not healthy either. Eat. But
-                        choose nutritious foods and practice portion control.</p>
-                </div>
-                <div class="image-content">
-                    <img src="freshImage/Rectangle 220.png" alt="" class="active">
-                    <div class="images">
-                        <img src="freshImage/Rectangle 222.png" alt="">
-                        <img src="freshImage/Rectangle 223.png" alt="">
-                        <img src="freshImage/Rectangle 224.png" alt="">
-                        <img src="freshImage/Rectangle 225.png" alt="">
-                    </div>
-                </div>
+      <div class="container">
+        <div class="content">
+          <div class="text-content">
+            <div>
+              You don’t have to eat less,<span
+                ><br />
+                you just have to eat right.</span
+              >
             </div>
-            <span class="btn"><a href="http://127.0.0.1:5500/html-file/menu.html#home">Order Now</a></span>
+            <p>
+              Eating less is not going to make you healthy. It sure can make you
+              skinny fat, which is not healthy either. Eat. But choose
+              nutritious foods and practice portion control.
+            </p>
+            <span class="btn"
+              ><a href="http://127.0.0.1:5500/html-file/menu.html#home"
+                >Order Now</a
+              ></span
+            >
+          </div>
+          <div class="image-content">
+            <img src="freshImage/Rectangle 220.png" alt="" class="active" />
+            <img src="freshImage/Rectangle 222.png" alt="" />
+            <img src="freshImage/Rectangle 223.png" alt="" />
+            <img src="freshImage/Rectangle 224.png" alt="" />
+            <img src="freshImage/Rectangle 225.png" alt="" />
+          </div>
         </div>
+      </div>
     </div>
     <!--end home -->
     <!-- start menu -->
     <div class="menu" id="menu">
-        <div class="container">
+      <div class="container">
             <div class="menu-head">
                 <h2>Popular snackes</h2>
                 <div class="direction">
@@ -240,224 +311,251 @@
             </div>
             </div>
         </div>
-    </div>
+    </div> 
     <!-- end menu -->
     <!-- start our-service -->
     <div class="our-service" id="about-us">
-        <h2>Our service</h2>
-        <div class="container">
-            <div class="content">
-                <div class="our-box">
-                    <i class="fa-solid fa-motorcycle"></i>
-                    <h4>Express Delivery</h4>
-                </div>
-                <div class="our-box">
-                    <i class="fa-solid fa-utensils"></i>
-                    <h4>30+ Restaurants</h4>
-                </div>
-                <div class="our-box">
-                    <i class="fa-solid fa-percent"></i>
-                    <h4>Discount system</h4>
-                </div>
-                <div class="our-box">
-                    <i class="fa-solid fa-bowl-food"></i>
-                    <h4>Best quality</h4>
-                </div>
-            </div>
+      <h2>Our service</h2>
+      <div class="container">
+        <div class="content">
+          <div class="our-box">
+            <i class="fa-solid fa-motorcycle"></i>
+            <h4>Express Delivery</h4>
+          </div>
+          <div class="our-box">
+            <i class="fa-solid fa-utensils"></i>
+            <h4>30+ Restaurants</h4>
+          </div>
+          <div class="our-box">
+            <i class="fa-solid fa-percent"></i>
+            <h4>Discount system</h4>
+          </div>
+          <div class="our-box">
+            <i class="fa-solid fa-bowl-food"></i>
+            <h4>Best quality</h4>
+          </div>
         </div>
+      </div>
     </div>
     <!-- end our-service -->
     <!-- start testimonies -->
     <div class="testimonies">
-        <h1>What our customers<br>are saying</h1>
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="box">
-                        <div class="image">
-                            <img src="freshImage/test.png" alt="">
-                        </div>
-                        <div class="text-content">
-                            <h4>Jeremiah ghon</h4>
-                            <div class="star-icons">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            <p>“Incredibe. Can Life Really Be This Easy And My Meals This Varied, Healthy And Delicious ?Workout Meals,Where Have You
-                            Been All My Life! Great Packing,Portions And Delivered On Time .</p>
-                        </div>
-                    </div>
+      <h1>What our customers<br />are saying</h1>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="box">
+              <div class="image">
+                <img src="freshImage/test.png" alt="" />
+              </div>
+              <div class="text-content">
+                <h4>Jeremiah ghon</h4>
+                <div class="star-icons">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
                 </div>
-                <div class="swiper-slide">
-                    <div class="box">
-                        <div class="image">
-                            <img src="freshImage/test.png" alt="">
-                        </div>
-                        <div class="text-content">
-                            <h4>Jeremiah ghon</h4>
-                            <div class="star-icons">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            <p>“Incredibe. Can Life Really Be This Easy And My Meals This Varied, Healthy And Delicious ?Workout Meals,Where Have You
-                            Been All My Life! Great Packing,Portions And Delivered On Time .</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="box">
-                        <div class="image">
-                            <img src="freshImage/test.png" alt="">
-                        </div>
-                        <div class="text-content">
-                            <h4>Jeremiah ghon</h4>
-                            <div class="star-icons">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            <p>“Incredibe. Can Life Really Be This Easy And My Meals This Varied, Healthy And Delicious ?Workout Meals,Where Have You
-                            Been All My Life! Great Packing,Portions And Delivered On Time .</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="box">
-                        <div class="image">
-                            <img src="freshImage/test.png" alt="">
-                        </div>
-                        <div class="text-content">
-                            <h4>Jeremiah ghon</h4>
-                            <div class="star-icons">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            <p>“Incredibe. Can Life Really Be This Easy And My Meals This Varied, Healthy And Delicious ?Workout Meals,Where Have You
-                            Been All My Life! Great Packing,Portions And Delivered On Time .</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="box">
-                        <div class="image">
-                            <img src="freshImage/test.png" alt="">
-                        </div>
-                        <div class="text-content">
-                            <h4>Jeremiah ghon</h4>
-                            <div class="star-icons">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            <p>“Incredibe. Can Life Really Be This Easy And My Meals This Varied, Healthy And Delicious ?Workout Meals,Where Have You
-                            Been All My Life! Great Packing,Portions And Delivered On Time .</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="box">
-                        <div class="image">
-                            <img src="freshImage/test.png" alt="">
-                        </div>
-                        <div class="text-content">
-                            <h4>Jeremiah ghon</h4>
-                            <div class="star-icons">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            <p>“Incredibe. Can Life Really Be This Easy And My Meals This Varied, Healthy And Delicious ?Workout Meals,Where Have You
-                            Been All My Life! Great Packing,Portions And Delivered On Time .</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="box">
-                        <div class="image">
-                            <img src="freshImage/test.png" alt="">
-                        </div>
-                        <div class="text-content">
-                            <h4>Jeremiah ghon</h4>
-                            <div class="star-icons">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            <p>“Incredibe. Can Life Really Be This Easy And My Meals This Varied, Healthy And Delicious ?Workout Meals,Where Have You
-                            Been All My Life! Great Packing,Portions And Delivered On Time .</p>
-                        </div>
-                    </div>
-                </div>
-                
+                <p>
+                  “Incredibe. Can Life Really Be This Easy And My Meals This
+                  Varied, Healthy And Delicious ?Workout Meals,Where Have You
+                  Been All My Life! Great Packing,Portions And Delivered On Time
+                  .
+                </p>
+              </div>
             </div>
-            <div class="swiper-pagination"></div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <div class="image">
+                <img src="freshImage/test.png" alt="" />
+              </div>
+              <div class="text-content">
+                <h4>Jeremiah ghon</h4>
+                <div class="star-icons">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p>
+                  “Incredibe. Can Life Really Be This Easy And My Meals This
+                  Varied, Healthy And Delicious ?Workout Meals,Where Have You
+                  Been All My Life! Great Packing,Portions And Delivered On Time
+                  .
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <div class="image">
+                <img src="freshImage/test.png" alt="" />
+              </div>
+              <div class="text-content">
+                <h4>Jeremiah ghon</h4>
+                <div class="star-icons">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p>
+                  “Incredibe. Can Life Really Be This Easy And My Meals This
+                  Varied, Healthy And Delicious ?Workout Meals,Where Have You
+                  Been All My Life! Great Packing,Portions And Delivered On Time
+                  .
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <div class="image">
+                <img src="freshImage/test.png" alt="" />
+              </div>
+              <div class="text-content">
+                <h4>Jeremiah ghon</h4>
+                <div class="star-icons">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p>
+                  “Incredibe. Can Life Really Be This Easy And My Meals This
+                  Varied, Healthy And Delicious ?Workout Meals,Where Have You
+                  Been All My Life! Great Packing,Portions And Delivered On Time
+                  .
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <div class="image">
+                <img src="freshImage/test.png" alt="" />
+              </div>
+              <div class="text-content">
+                <h4>Jeremiah ghon</h4>
+                <div class="star-icons">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p>
+                  “Incredibe. Can Life Really Be This Easy And My Meals This
+                  Varied, Healthy And Delicious ?Workout Meals,Where Have You
+                  Been All My Life! Great Packing,Portions And Delivered On Time
+                  .
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <div class="image">
+                <img src="freshImage/test.png" alt="" />
+              </div>
+              <div class="text-content">
+                <h4>Jeremiah ghon</h4>
+                <div class="star-icons">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p>
+                  “Incredibe. Can Life Really Be This Easy And My Meals This
+                  Varied, Healthy And Delicious ?Workout Meals,Where Have You
+                  Been All My Life! Great Packing,Portions And Delivered On Time
+                  .
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <div class="image">
+                <img src="freshImage/test.png" alt="" />
+              </div>
+              <div class="text-content">
+                <h4>Jeremiah ghon</h4>
+                <div class="star-icons">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p>
+                  “Incredibe. Can Life Really Be This Easy And My Meals This
+                  Varied, Healthy And Delicious ?Workout Meals,Where Have You
+                  Been All My Life! Great Packing,Portions And Delivered On Time
+                  .
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="swiper-pagination"></div>
+      </div>
     </div>
     <!-- end testimonies -->
     <!-- start footer -->
     <div class="footer">
-        <div class="container">
-            <div class="contact">
-                <div class="icon">
-                    <div><a class="fa-solid fa-wheat-awn white" href="#"></a></div>
-                    <a href="#" class="name">Fre<span>shy</span></a>
-                </div>
-                <ul class="nav">
-                    <li><a href="#overview">Overview</a></li>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#pricing">Pricing</a></li>
-                    <li><a href="#careers">Careers</a></li>
-                    <li><a href="#help">Help</a></li>
-                    <li><a href="#privacy">Privacy</a></li>
-                </ul>
-                <div class="text">&copy; 2022 Freshy</div>
-            </div>
+      <div class="container">
+        <div class="contact">
+          <div class="icon">
+            <div><a class="fa-solid fa-wheat-awn white" href="#"></a></div>
+            <a href="#" class="name">Fre<span>shy</span></a>
+          </div>
+          <ul class="nav">
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#help">Help</a></li>
+            <li><a href="#privacy">Privacy</a></li>
+          </ul>
+          <div class="text">&copy; 2022 Freshy</div>
         </div>
+      </div>
     </div>
     <!-- end footer -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script>
-        var swiper = new Swiper(".mySwiper", {
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          640: {
             slidesPerView: 1,
+            spaceBetween: 50,
+          },
+          768: {
+            slidesPerView: 3,
             spaceBetween: 10,
-            loop:true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true
-            },
-            breakpoints: {
-                640: {
-                    slidesPerView: 1,
-                    spaceBetween: 50
-                },
-                768: {
-                    slidesPerView: 1,
-                    spaceBetween: 10
-                },
-                1024: {
-                    slidesPerView: 2,
-                    spaceBetween: 50
-                }
-            }
-        });
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },
+        },
+      });
     </script>
     <script src="js-file/freshy.js"></script>
-</body>
+  </body>
 </html>
